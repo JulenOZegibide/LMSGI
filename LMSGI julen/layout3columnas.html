@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>layout3columnas</title>
+		<style>
+			body{
+			margin:0 auto;
+			}
+			main{
+			display:flex;
+			flex-grow:3;
+			}
+			header{
+			background-color:lightgrey;
+			flex-grow:1;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			}
+			article{
+			background-color:grey;
+			flex-grow:2;
+			order:2;
+			}
+			nav{
+			background-color:darkgrey;
+			flex-grow:1;
+			order:1;
+			}
+			aside{
+			background-color:darkgrey;	
+			flex-grow:1;
+			order:3;			
+			}
+			footer{
+			display:flex;
+			background-color:lightgrey;	
+			flex-grow:0.5;	
+			align-items:center;
+			justify-content:center;
+			}
+			.container{
+			display:flex;
+			flex-direction:column;
+			height:100vh;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>Header</header>
+			<main>
+				<article>Article</article>
+				<nav>Nav</nav>
+				<aside>Aside</aside>
+			</main>
+		<footer>Footer</footer>
+		</div>
+	</body>
+</html>	
+	
